@@ -109,7 +109,7 @@ def combined_loss(output, target):
     return residual + 0.5 * ssim_loss
 
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
-epochs = 5
+epochs = 80
 loss_history = []
 
 # ---- Entraînement ----
@@ -178,7 +178,7 @@ with torch.no_grad():
 
 # Sauvegarde du vecteur latent en CSV
 Path("latents").mkdir(exist_ok=True)
-with open("latents/latent_vectortstreal.csv", "w", newline="") as f:
+with open("latents/latent_vector.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(latent.flatten())
 
