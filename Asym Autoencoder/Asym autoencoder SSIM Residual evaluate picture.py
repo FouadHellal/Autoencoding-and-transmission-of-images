@@ -71,11 +71,11 @@ encoder = Encoder().to(device)
 decoder = Decoder().to(device)
 
 encoder.load_state_dict(torch.load(
-    "C:/Users/PROMOTECH/Downloads/encoder_asym_works.pth",
+    "C:/Users/PROMOTECH/OneDrive/Documents/DB/Asym Autoencoder/encoder_asym_works.pth",
     map_location=device
 ))
 decoder.load_state_dict(torch.load(
-    "C:/Users/PROMOTECH/Downloads/decoder_asym_works.pth",
+    "C:/Users/PROMOTECH/OneDrive/Documents/DB/Asym Autoencoder/decoder_asym_works.pth",
     map_location=device
 ))
 
