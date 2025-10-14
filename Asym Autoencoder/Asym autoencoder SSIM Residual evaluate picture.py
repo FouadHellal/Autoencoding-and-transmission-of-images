@@ -98,7 +98,7 @@ def denormalize(t):
 # ===============================
 #  Test d'inférence
 # ===============================
-image_path = "C:/Users/PROMOTECH/OneDrive/Documents/DB/DATABASE/test/22.jpg"
+image_path = "C:/Users/PROMOTECH/OneDrive/Documents/DB/DATABASE/test/tst.jpg"
 img = Image.open(image_path).convert("RGB")
 
 img_tensor = transform(img).unsqueeze(0).to(device)
